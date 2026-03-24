@@ -1,0 +1,375 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Braige &amp; Company</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#0D5D6D",
+                "on-primary": "#ffffff",
+                "primary-container": "#e0f2f1",
+                "on-primary-container": "#002021",
+                "secondary": "#4a6367",
+                "surface": "#f5f7f9",
+                "on-surface": "#191c1d",
+                "surface-variant": "#dee4e5",
+                "outline": "#70797b",
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-[#191c1d] font-body selection:bg-primary selection:text-white">
+<!-- Navigation -->
+<header class="w-full bg-white py-4 border-b border-gray-50 sticky top-0 z-50">
+<nav class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-white shadow-sm flex items-center justify-center border border-gray-100">
+<img alt="Logo" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArlK9uA-yv2L1fD-E-0p3mH2pYk-9_q0Rj3vQZ3n0L-1p9fV0nL5kS_Q9A=s120"/>
+</div>
+<span class="text-xl font-bold tracking-tight font-headline text-[#333]">BRAIGE &amp; COMPANY</span>
+</div>
+<div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-gray-600">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link active" href="services.html">Services</a>
+<a class="nav-link" href="#">About</a>
+<a class="nav-link" href="#">Contact</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<header class="relative h-[480px] flex items-center overflow-hidden bg-slate-100">
+<img alt="Hero background" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASqDuzuvGnD0NKk-iZCL-6eXpbmV7RPpONuYLL98ugLWJlZGnJkDTGnKoLtR3WwICsBOGWrNIbIPwRNvYp59_4gApcdFWxAA1VCaR-MHwVlcmhmLP_Ok1x7qwyDplfagG2GS9K_2BHSgChHF_bb-TYL8uIBh9Oa8mCWW7nkqmeRJqvH5rcZojq1pYBKlo9vc0izDzQQh4VLizZYXehGqTvAHNJQh-TkWQMHkMBj5rCtCKmZJGlc0xxy5eI_e7H8BJ5CwP2Cva57PY"/>
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl text-white">
+<h1 class="text-5xl md:text-6xl font-headline font-bold mb-4">
+                    Our Services
+                </h1>
+<p class="text-lg opacity-90 max-w-lg mb-8">
+                    Comprehensive business solutions tailored to your unique needs, from strategy to execution, we've got you covered.
+                </p>
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all">
+                    Schedule a Consultation
+                </button>
+</div>
+</div>
+</header>
+<!-- Tab Navigation -->
+<section class="max-w-7xl mx-auto px-8 py-12">
+<div class="flex flex-wrap gap-4 justify-center md:justify-between border-b border-transparent pb-4">
+<button class="px-8 py-3 rounded-xl font-bold transition-all bg-primary text-white shadow-lg" id="tab-business" onclick="switchTab('business')">
+                Business Advisory
+            </button>
+<button class="px-8 py-3 rounded-xl font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200" id="tab-branding" onclick="switchTab('branding')">
+                Branding Services
+            </button>
+<button class="px-8 py-3 rounded-xl font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200" id="tab-engineering" onclick="switchTab('engineering')">
+                Engineering &amp; Design
+            </button>
+<button class="px-8 py-3 rounded-xl font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200" id="tab-project" onclick="switchTab('project')">
+                Project Management
+            </button>
+</div>
+</section>
+<!-- Content Area -->
+<section class="max-w-7xl mx-auto px-8 pb-24">
+<div class="bg-[#f3f4fb] rounded-[2.5rem] p-12 md:p-16">
+<!-- Business Advisory -->
+<div class="service-tab-content active" id="content-business">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5 space-y-8">
+<h2 class="text-4xl font-headline font-bold text-[#191c1d]">Business Advisory</h2>
+<p class="text-[#4a6367] leading-relaxed">
+                            We conduct both quantitative and qualitative research on all prospective businesses, to efficiently navigate through different economical and commercial terrains and to thoroughly analyze trends.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Business Plans &amp; Feasibility Studies
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Investment &amp; Risk Analysis
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Concept Notes &amp; Proposals
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Strategy &amp; Implementation Plans
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Human Capacity Development
+                            </li>
+</ul>
+<p class="text-xs text-[#70797b] italic">
+                            "From concept notes for Agri-business startups to expansion plans for energy firms, we've done it all."
+                        </p>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="stat-card">
+<h3>25+</h3>
+<p>Business Plans<br/>Completed</p>
+</div>
+<div class="stat-card">
+<h3>15+</h3>
+<p>Feasibility Studies</p>
+</div>
+<div class="stat-card">
+<h3>10+</h3>
+<p>Investment Cases<br/>Reviewed</p>
+</div>
+<div class="stat-card">
+<h3>6+</h3>
+<p>Industries Served</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Branding Services -->
+<div class="service-tab-content" id="content-branding">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5 space-y-8">
+<h2 class="text-4xl font-headline font-bold text-[#191c1d]">Branding Services</h2>
+<p class="text-[#4a6367] leading-relaxed">
+                            We are equipped with the best tools for rendering top-notch visuals for business solutions. From inception phase to the inking phase, we deliver accurately.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Visual Identity
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Print Collateral
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Digital Presence
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Brand Strategy
+                            </li>
+</ul>
+<p class="text-xs text-[#70797b] italic">
+                            "We've created brand identities for businesses across Agriculture, ICT, Hospitality, Real Estate, and Financial Services."
+                        </p>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="stat-card">
+<h3>50+</h3>
+<p>Logos Created</p>
+</div>
+<div class="stat-card">
+<h3>30+</h3>
+<p>Brochures</p>
+</div>
+<div class="stat-card">
+<h3>15+</h3>
+<p>Websites</p>
+</div>
+<div class="stat-card">
+<h3>6+</h3>
+<p>Industries Served</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Engineering & Design -->
+<div class="service-tab-content" id="content-engineering">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5 space-y-8">
+<h2 class="text-4xl font-headline font-bold text-[#191c1d]">Engineering &amp; Design</h2>
+<p class="text-[#4a6367] leading-relaxed">
+                            Strategic partnerships with experienced professional engineers, architects and project planners to render world class real estate services.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                2D &amp; 3D Architectural Drawings
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Structural Design &amp; Details
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Project Construction Supervision
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Interior &amp; Exterior Renderings
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Budget Matching
+                            </li>
+</ul>
+<p class="text-xs text-[#70797b] italic">
+                            "From 4-Bedroom Twin Duplexes in Lagos to conceptual resort designs, we bring visions to life."
+                        </p>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-primary p-12 rounded-[2rem] text-center text-white space-y-8">
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-6xl opacity-80">settings_suggest</span>
+</div>
+<p class="text-sm font-bold opacity-90 max-w-sm mx-auto">
+                                We tailor client's budget to match best case scenarios, feasible for preliminary designs to project completion.
+                            </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-white text-primary p-6 rounded-2xl flex flex-col justify-center items-center">
+<div class="text-3xl font-extrabold">2D/3D</div>
+<div class="text-[10px] uppercase font-bold tracking-widest">Drawings</div>
+</div>
+<div class="bg-white text-primary p-6 rounded-2xl flex flex-col justify-center items-center">
+<div class="text-3xl font-extrabold">100%</div>
+<div class="text-[10px] uppercase font-bold tracking-widest">Visualization</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Management -->
+<div class="service-tab-content" id="content-project">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5 space-y-8">
+<h2 class="text-4xl font-headline font-bold text-[#191c1d]">Project Management</h2>
+<p class="text-[#4a6367] leading-relaxed">
+                            End-to-end project oversight ensuring your initiatives are delivered on time, within budget, and to the highest quality standards.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Project Planning &amp; Scheduling
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Resource Allocation
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Risk Management
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Quality Assurance
+                            </li>
+<li class="flex items-center gap-3 font-bold text-[#191c1d]">
+<span class="material-symbols-outlined text-[#191c1d]">check</span>
+                                Stakeholder Communication
+                            </li>
+</ul>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-primary p-12 rounded-[2rem] text-center text-white space-y-8">
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-6xl opacity-80">analytics</span>
+</div>
+<p class="text-sm font-bold opacity-90 max-w-sm mx-auto">
+                                We ensure your projects move from concept to completion seamlessly.
+                            </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-white text-primary p-6 rounded-2xl flex flex-col justify-center items-center">
+<div class="text-3xl font-extrabold">24/7</div>
+<div class="text-[10px] uppercase font-bold tracking-widest">Support</div>
+</div>
+<div class="bg-white text-primary p-6 rounded-2xl flex flex-col justify-center items-center">
+<div class="text-3xl font-extrabold">100%</div>
+<div class="text-[10px] uppercase font-bold tracking-widest">Focus</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="bg-[#f3f4fb] rounded-[2.5rem] p-16 text-center space-y-8">
+<h2 class="text-4xl font-headline font-bold text-[#191c1d]">Ready to start your project?</h2>
+<p class="text-[#4a6367] max-w-2xl mx-auto">
+                Let's discuss how we can help take your business to the next level.
+            </p>
+<button class="bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center gap-3 mx-auto shadow-xl hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined">calendar_month</span>
+                Book a Consultation
+            </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white py-16">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-16 mb-8">
+<div class="space-y-6">
+<div class="bg-white w-12 h-12 p-1 flex items-center justify-center">
+<img alt="Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-RAsK9KNo1Yx99Q4R4F-P_Z-3-y_2E_0-X9-C9-F9-L9-D9-A9-B9-C9-E9-F9-G9-H9-I9-J9-K9-L9-M9"/>
+</div>
+<div class="text-xl font-medium tracking-widest uppercase font-headline">BRAIGE &amp; COMPANY</div>
+<p class="text-xs opacity-70 leading-relaxed font-body">
+                    Multi-sectorial firm providing support services in Business Development, Branding and Project Management. We make clients see the "extra-awesomeness" of their brand.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Quick links</h4>
+<ul class="space-y-3 text-sm opacity-80">
+<li><a class="hover:underline" href="#">About Us</a></li>
+<li><a class="hover:underline" href="#">Services</a></li>
+<li><a class="hover:underline" href="#">Portfolio</a></li>
+<li><a class="hover:underline" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Services</h4>
+<ul class="space-y-3 text-sm opacity-80">
+<li><a class="hover:underline" href="#">Business Advisory</a></li>
+<li><a class="hover:underline" href="#">Branding</a></li>
+<li><a class="hover:underline" href="#">Engineering &amp; Design</a></li>
+<li><a class="hover:underline" href="#">Project Management</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Get In Touch</h4>
+<ul class="space-y-3 text-sm opacity-80">
+<li>admin@braige.com</li>
+<li>braigedesigns@gmail.com</li>
+<li>+234 906 387 7366</li>
+<li>Abuja, Nigeria</li>
+</ul>
+</div>
+</div>
+<div class="text-center text-xs opacity-60">
+            © 2024 Braige &amp; Company. All rights reserved.
+        </div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

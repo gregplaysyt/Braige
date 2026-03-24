@@ -1,0 +1,123 @@
+/* styles.css */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+.hero-pattern {
+    background-image: radial-gradient(circle at 80% 50%, rgba(19, 93, 102, 0.05) 0%, transparent 60%);
+}
+.step-arrow::after {
+    content: "→";
+    position: absolute;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 0.5;
+}
+@media (max-width: 768px) {
+    .step-arrow::after { 
+        content: "↓"; 
+        right: auto; 
+        bottom: -2.5rem; 
+        top: auto; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+}
+
+/* SVG and layout presentation moved to CSS */
+.dot-fill circle,
+.dot-fill path {
+    fill: #135D66;
+}
+.process-wave {
+    fill: white;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+.dot-grid {
+    width: 200px;
+    height: 200px;
+}
+
+/* styles.css */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.service-tab-content { 
+    display: none; 
+}
+.service-tab-content.active { 
+    display: block; 
+}
+.stat-card {
+    background-color: #0D5D6D;
+    color: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1.5rem;
+    text-align: left;
+}
+.stat-card h3 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.stat-card p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    opacity: 0.9;
+    line-height: 1.2;
+}
+
+/* Smooth hover/click effects for primary buttons */
+button, a.bg-primary, a.bg-secondary, a[class*="rounded-full"] {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    will-change: transform;
+}
+
+button:hover, a.bg-primary:hover, a.bg-secondary:hover, a[class*="rounded-full"]:hover {
+    transform: scale(1.035);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active, a.bg-primary:active, a.bg-secondary:active, a[class*="rounded-full"]:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* navbar link base style */
+nav .nav-link {
+    padding: 0.6rem 0.95rem;
+    border-radius: 9999px;
+    transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b5563;
+    text-decoration: none;
+}
+nav .nav-link:hover,
+nav .nav-link:focus-visible {
+    transform: translateY(-1.5px);
+    color: #135D66;
+    background-color: rgba(19, 93, 102, 0.1);
+}
+nav .nav-link:active {
+    transform: translateY(0) scale(0.98);
+}
+nav .nav-link.active {
+    color: white;
+    background-color: #135D66;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Make sure active styling is stable across pages */
+nav .nav-link.active:hover {
+    background-color: #0a3b43;
+    color: white;
+    transform: translateY(-1px);
+}
