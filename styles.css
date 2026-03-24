@@ -99,7 +99,7 @@ nav .nav-link {
     justify-content: center;
     color: #4b5563;
     text-decoration: none;
-} 
+}
 nav .nav-link:hover,
 nav .nav-link:focus-visible {
     transform: translateY(-1.5px);
