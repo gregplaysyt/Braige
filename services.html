@@ -10,29 +10,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "primary": "#135D66",
-                "on-primary": "#ffffff",
-                "primary-container": "#e0f2f1",
-                "on-primary-container": "#002021",
-                "secondary": "#4a6367",
-                "surface": "#f5f7f9",
-                "on-surface": "#191c1d",
-                "surface-variant": "#dee4e5",
-                "outline": "#70797b",
-              },
-              fontFamily: {
-                "headline": ["Manrope"],
-                "body": ["Inter"],
-              },
-              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135D66",
+              "secondary": "#0A3B43",
+              "surface": "#FFFFFF",
+              "background": "#FDFDFD",
+              "slate-custom": "#4A5568",
+              "on-surface-variant": "#64748b"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+                "DEFAULT": "0.25rem", 
+                "lg": "0.5rem", 
+                "xl": "0.75rem", 
+                "2xl": "1rem",
+                "3xl": "1.5rem",
+                "full": "9999px"
             },
           },
-        }
+        },
+      }
     </script>
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -371,6 +374,6 @@
 <p class="text-white/60 text-sm">© 2026 Braige &amp; Company. All rights reserved.</p>
 </div>
 </footer>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
