@@ -48,7 +48,10 @@ function animateCounters(element) {
                 counter.textContent = Math.floor(current);
                 requestAnimationFrame(updateCounter);
             } else {
-                counter.textContent = target + '%';
+                // Keep the 100 counter as a true percentage, but show other counters as "X+"
+                // (e.g. 50 -> "50+")
+                const suffix = target === 100 ? '%' : '+';
+                counter.textContent = target + suffix;
             }
         };
         
