@@ -48,7 +48,7 @@ function animateCounters(element) {
                 counter.textContent = Math.floor(current);
                 requestAnimationFrame(updateCounter);
             } else {
-                counter.textContent = target + '+';
+                counter.textContent = target + '%';
             }
         };
         
