@@ -41,24 +41,34 @@
 </head>
 <body class="bg-white text-[#191c1d] font-body selection:bg-primary selection:text-white">
 <!-- Navigation -->
-<header class="w-full bg-white py-4 border-b border-gray-50 sticky top-0 z-50">
-<nav class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-<div class="flex items-center gap-3">
+<header class="w-full bg-white py-4 border-b border-gray-50 sticky top-0 z-50 relative">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+<a href="index.html" class="logo-link flex items-center gap-3" aria-label="Go to homepage">
 <div class="w-14 h-14 flex items-center justify-center">
 <img alt="Logo" class="w-12 h-12 object-contain" src="assets/logo.png"/>
 </div>
-<span class="text-xl font-bold tracking-tight font-headline text-[#333]">BRAIGE &amp; COMPANY</span>
-</div>
+<span class="hidden sm:inline text-xl font-bold tracking-tight font-headline text-[#333]">BRAIGE &amp; COMPANY</span>
+</a>
 <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-600">
 <a class="nav-link" href="index.html">Home</a>
 <a class="nav-link active" href="services.html">Services</a>
 <a class="nav-link" href="#">About</a>
 <a class="nav-link" href="#">Contact</a>
 </div>
-<div class="md:hidden">
+<button id="mobile-menu-button" class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/40" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
 <span class="material-symbols-outlined">menu</span>
-</div>
+</button>
 </nav>
+<div id="mobile-menu" class="md:hidden hidden absolute left-0 right-0 top-full bg-white border-b border-gray-50 shadow-lg z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+<div class="flex flex-col gap-2">
+<a class="nav-link w-full justify-start" href="index.html">Home</a>
+<a class="nav-link active w-full justify-start" href="services.html">Services</a>
+<a class="nav-link w-full justify-start" href="#">About</a>
+<a class="nav-link w-full justify-start" href="#">Contact</a>
+</div>
+</div>
+</div>
 </header>
 <main>
 <!-- Hero Section -->
