@@ -2,18 +2,24 @@
 function switchTab(service) {
     const contents = document.querySelectorAll('.service-tab-content');
 
-    // Fade out currently active content before switching
+    const currentActive = document.querySelector('.service-tab-content.active');
+    const nextContent = document.getElementById('content-' + service);
+
+    if (!nextContent || currentActive === nextContent) return;
+
     contents.forEach(content => {
-        if (content.classList.contains('active')) {
+        if (content !== currentActive && content !== nextContent) {
+            content.classList.add('hidden');
             content.classList.remove('active');
-            content.classList.add('fade-out');
-            content.addEventListener('transitionend', () => {
-                content.classList.remove('fade-out');
-            }, { once: true });
-        } else {
-            content.classList.remove('fade-out');
         }
     });
+
+    if (currentActive) {
+        currentActive.classList.remove('active');
+        currentActive.addEventListener('transitionend', () => {
+            currentActive.classList.add('hidden');
+        }, { once: true });
+    }
 
     // Reset all tabs
     const tabs = document.querySelectorAll('[id^="tab-"]');
@@ -22,16 +28,27 @@ function switchTab(service) {
         tab.classList.add('text-[#191c1d]', 'bg-slate-100', 'hover:bg-slate-200');
     });
 
-    // Show active content with fade-in
-    const nextContent = document.getElementById('content-' + service);
-    nextContent.classList.add('active');
-    nextContent.classList.remove('fade-out');
+    // Show next panel (fade in)
+    nextContent.classList.remove('hidden');
+    nextContent.classList.remove('active');
+    requestAnimationFrame(() => {
+        nextContent.classList.add('active');
+    });
 
     // Set active tab style
     const activeTab = document.getElementById('tab-' + service);
     activeTab.classList.remove('text-[#191c1d]', 'bg-slate-100', 'hover:bg-slate-200');
     activeTab.classList.add('bg-primary', 'text-white', 'shadow-lg');
 }
+
+// Initialize services tabs so non-active are not in layout
+document.addEventListener('DOMContentLoaded', () => {
+    const contents = document.querySelectorAll('.service-tab-content');
+    if (!contents.length) return;
+    contents.forEach(content => {
+        if (!content.classList.contains('active')) content.classList.add('hidden');
+    });
+});
 
 // Counter animation on scroll
 function animateCounters(element) {
@@ -92,5 +109,43 @@ document.addEventListener('DOMContentLoaded', () => {
     
     scrollAnimateElements.forEach(element => {
         observer.observe(element);
+    });
+});
+
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (!mobileMenuButton || !mobileMenu) return;
+
+    const mobileMenuIcon = mobileMenuButton.querySelector('.material-symbols-outlined');
+
+    const setOpen = (open) => {
+        mobileMenu.classList.toggle('hidden', !open);
+        mobileMenuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (mobileMenuIcon) mobileMenuIcon.textContent = open ? 'close' : 'menu';
+    };
+
+    const getIsOpen = () => !mobileMenu.classList.contains('hidden');
+    setOpen(false);
+
+    mobileMenuButton.addEventListener('click', () => {
+        setOpen(!getIsOpen());
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => setOpen(false));
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!getIsOpen()) return;
+        if (mobileMenu.contains(e.target)) return;
+        if (mobileMenuButton.contains(e.target)) return;
+        setOpen(false);
+    }, { capture: true });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setOpen(false);
     });
 });
