@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | BRAIGE &amp; COMPANY</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d97be",
+                        "secondary": "#0A3B43",
+                        "surface": "#FFFFFF",
+                        "background": "#FDFDFD",
+                        "slate-custom": "#4A5568",
+                        "on-surface-variant": "#64748b"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background text-[#1a1a1a] font-body selection:bg-primary/20 overflow-x-hidden">
+    <!-- Navigation -->
+    <header class="w-full bg-white py-4 border-b border-gray-50 sticky top-0 z-50 relative">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+            <a href="index.html" class="logo-link flex items-center gap-3" aria-label="Go to homepage">
+                <div class="w-14 h-14 flex items-center justify-center">
+                    <img alt="Logo" class="w-12 h-12 object-contain" src="assets/logo.png" />
+                </div>
+                <span class="hidden sm:inline text-xl font-bold tracking-tight font-headline text-[#333]">BRAIGE &amp;
+                    COMPANY</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-600">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" href="contact.html">Contact</a>
+            </div>
+            <button id="mobile-menu-button"
+                class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/40" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+        <div id="mobile-menu"
+            class="md:hidden hidden absolute left-0 right-0 top-full bg-white border-b border-gray-50 shadow-lg z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+                <div class="flex flex-col gap-2">
+                    <a class="nav-link w-full justify-start" href="index.html">Home</a>
+                    <a class="nav-link w-full justify-start" href="services.html">Services</a>
+                    <a class="nav-link w-full justify-start" href="about.html">About</a>
+                    <a class="nav-link active w-full justify-start" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[500px] flex items-center overflow-hidden bg-primary hero-pattern">
+            <div class="absolute inset-0 z-0">
+                <img alt="Professional office space"
+                    class="w-full h-full object-cover grayscale brightness-[0.2] opacity-40"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV8Dm8VkjKPddWGc4KSjBZ8Jk479Vdv35sKjRemGl61Cco7wV3J0Kksk1UqhxsoO9M72cw_qVhi2Sa0MM61jaEVTZnP-vBR6e60KziNdjE2x13JKwnqhGahqF6JoMyJv-IzGR_taeOq6HL32EvGRSkl2ZeigKLjsrQwZ3n-gCTLW428O_-Cnb718AVBxGujSxrHBJ1dsnyyQsKGn4Dn1gyZTBIdg2D0Z4e5SJCfJ8PRFCnBmoLaR9HzD21_Kfjoi3-tPagfmq1C5A" />
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full text-white pt-24 pb-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <span
+                        class="inline-block text-white/80 uppercase tracking-widest text-sm font-bold mb-4 border-b-2 border-white/40 pb-1">Get
+                        In Touch</span>
+                    <h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
+                        Contact Us</h1>
+                    <p class="text-xl text-white/80 leading-relaxed">
+                        Dedicated support when you need it most, clear answers to your questions, and a team that's
+                        always ready to help you succeed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Content Area -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 py-24 scroll-animate relative -mt-32 z-20">
+            <div
+                class="bg-white rounded-[2rem] shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-50 overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    <!-- Contact Info Sidebar -->
+                    <div class="lg:col-span-5 bg-gray-50 p-10 md:p-14 relative overflow-hidden">
+                        <div
+                            class="absolute -right-20 -bottom-20 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none">
+                        </div>
+                        <div class="relative z-10">
+                            <h2 class="font-headline text-3xl font-bold text-gray-900 mb-6">We are always ready to help.
+                            </h2>
+                            <p class="text-gray-500 text-lg leading-relaxed mb-12">
+                                Our experts are on standby to guide you through your business transformation. Reach out
+                                through any of our channels below.
+                            </p>
+
+                            <div class="space-y-8">
+                                <!-- Call Centre -->
+                                <div class="flex gap-5 group items-start">
+                                    <div
+                                        class="bg-white shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] w-14 h-14 rounded-2xl flex items-center justify-center text-primary shrink-0 group-hover:-translate-y-1 transition-all duration-300 pointer-events-auto cursor-pointer">
+                                        <span
+                                            class="material-symbols-outlined transition-transform group-hover:scale-110"
+                                            style="font-variation-settings: 'FILL' 1;">call</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-headline font-bold text-lg text-gray-900 mb-1">Call Centre</p>
+                                        <p class="text-gray-500 hover:text-primary transition-colors cursor-pointer">
+                                            +234 906 387 7366</p>
+                                    </div>
+                                </div>
+
+                                <!-- Our Location -->
+                                <div class="flex gap-5 group items-start">
+                                    <div
+                                        class="bg-white shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] w-14 h-14 rounded-2xl flex items-center justify-center text-primary shrink-0 group-hover:-translate-y-1 transition-all duration-300 pointer-events-auto cursor-pointer">
+                                        <span
+                                            class="material-symbols-outlined transition-transform group-hover:scale-110"
+                                            style="font-variation-settings: 'FILL' 1;">location_on</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-headline font-bold text-lg text-gray-900 mb-1">Our Location</p>
+                                        <p class="text-gray-500">Abuja, Nigeria</p>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="flex gap-5 group items-start">
+                                    <div
+                                        class="bg-white shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] w-14 h-14 rounded-2xl flex items-center justify-center text-primary shrink-0 group-hover:-translate-y-1 transition-all duration-300 pointer-events-auto cursor-pointer">
+                                        <span
+                                            class="material-symbols-outlined transition-transform group-hover:scale-110"
+                                            style="font-variation-settings: 'FILL' 1;">mail</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-headline font-bold text-lg text-gray-900 mb-1">Email</p>
+                                        <p
+                                            class="text-gray-500 hover:text-primary transition-colors cursor-pointer mb-1">
+                                            admin@braige.com</p>
+                                        <p class="text-gray-500 hover:text-primary transition-colors cursor-pointer">
+                                            braigedesigns@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <!-- Social Network -->
+                                <div class="flex gap-5 group items-start pt-4">
+                                    <div class="w-14 items-start justify-center flex">
+                                        <span class="material-symbols-outlined text-primary text-3xl"
+                                            style="font-variation-settings: 'FILL' 1;">share</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-headline font-bold text-lg text-gray-900 mb-4">Social Network</p>
+                                        <div class="flex gap-3">
+                                            <a class="w-10 h-10 rounded-full bg-white shadow-md text-primary flex items-center justify-center hover:bg-primary hover:text-white hover:-translate-y-1 transition-all"
+                                                href="#">
+                                                <svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+                                                    <path
+                                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                            <a class="w-10 h-10 rounded-full bg-white shadow-md text-primary flex items-center justify-center hover:bg-primary hover:text-white hover:-translate-y-1 transition-all"
+                                                href="#">
+                                                <svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+                                                    <path
+                                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                            <a class="w-10 h-10 rounded-full bg-white shadow-md text-primary flex items-center justify-center hover:bg-primary hover:text-white hover:-translate-y-1 transition-all"
+                                                href="#">
+                                                <svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+                                                    <path
+                                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="lg:col-span-7 p-10 md:p-14">
+                        <h3 class="font-headline text-3xl font-extrabold text-gray-900 mb-8">Send Us a Message</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-gray-500 uppercase tracking-wide">Your
+                                        Name</label>
+                                    <input
+                                        class="w-full px-5 py-4 bg-gray-50 focus:bg-white rounded-xl border border-gray-100 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 transition-all placeholder:text-gray-400 outline-none"
+                                        placeholder="John Doe" type="text" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold text-gray-500 uppercase tracking-wide">Email
+                                        Address</label>
+                                    <input
+                                        class="w-full px-5 py-4 bg-gray-50 focus:bg-white rounded-xl border border-gray-100 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 transition-all placeholder:text-gray-400 outline-none"
+                                        placeholder="john@example.com" type="email" />
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-gray-500 uppercase tracking-wide">Subject</label>
+                                <input
+                                    class="w-full px-5 py-4 bg-gray-50 focus:bg-white rounded-xl border border-gray-100 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 transition-all placeholder:text-gray-400 outline-none"
+                                    placeholder="How can we help?" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-gray-500 uppercase tracking-wide">Write a
+                                    message...</label>
+                                <textarea
+                                    class="w-full px-5 py-4 bg-gray-50 focus:bg-white rounded-xl border border-gray-100 focus:border-primary/30 focus:ring-4 focus:ring-primary/10 transition-all placeholder:text-gray-400 outline-none resize-none"
+                                    placeholder="Tell us more about your project or inquiry..." rows="5"></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-secondary active:scale-[0.98] transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2"
+                                type="submit">
+                                Submit message
+                                <span class="material-symbols-outlined">send</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium FAQ Section -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 pb-32 scroll-animate">
+            <div class="text-center mb-16">
+                <p class="text-sm font-bold tracking-widest text-gray-400 border-b-2 border-primary inline-block pb-1">
+                    SUPPORT</p>
+                <h2 class="font-headline text-4xl font-extrabold text-gray-900 mt-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- FAQ 1 -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-gray-50 shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                    <h4 class="font-headline text-lg font-bold text-gray-900 mb-3 flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-0.5">help_outline</span>
+                        How long does a typical consultation take?
+                    </h4>
+                    <p class="text-gray-500 leading-relaxed pl-9">
+                        Our initial discovery sessions typically range from 45 to 60 minutes. This allows us ample time
+                        to understand your core objectives and outline a preliminary roadmap.
+                    </p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-gray-50 shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                    <h4 class="font-headline text-lg font-bold text-gray-900 mb-3 flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-0.5">help_outline</span>
+                        Do you work with international clients?
+                    </h4>
+                    <p class="text-gray-500 leading-relaxed pl-9">
+                        Absolutely. Braige &amp; Company currently supports numerous international enterprises via
+                        remote collaboration tools and periodic on-site visits when necessary.
+                    </p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-gray-50 shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                    <h4 class="font-headline text-lg font-bold text-gray-900 mb-3 flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-0.5">help_outline</span>
+                        What industries do you specialize in?
+                    </h4>
+                    <p class="text-gray-500 leading-relaxed pl-9">
+                        Our multi-sectorial teams specialize in real estate, agri-tech, finance, and enterprise
+                        software. However, our methodology is highly adaptable to most rapidly scaling markets.
+                    </p>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-gray-50 shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                    <h4 class="font-headline text-lg font-bold text-gray-900 mb-3 flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-0.5">help_outline</span>
+                        How do we get started?
+                    </h4>
+                    <p class="text-gray-500 leading-relaxed pl-9">
+                        Simply fill out the contact form above with your basic details. One of our lead consultants will
+                        review your query and reach out within 24 business hours to schedule a call.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-16 h-16 bg-white flex items-center justify-center">
+                        <img alt="Logo" class="w-14 h-14 object-contain" src="assets/logo.png" />
+                    </div>
+                </div>
+                <h4 class="text-xl font-bold font-headline uppercase tracking-tighter">BRAIGE &amp; COMPANY</h4>
+                <p class="text-white/70 text-sm leading-relaxed max-w-xs">
+                    Multi-sectorial firm providing support services in Business Development, Branding and Project
+                    Management. We
+                    make clients see the "extra-awesomeness" of their brand.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-8">Quick links</h4>
+                <ul class="space-y-4 text-white/80 text-sm">
+                    <li><a class="hover:text-white transition-colors" href="about.html">About Us</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Services</a></li>
+                    <li><a class="hover:text-white transition-colors" href="index.html#portfolio">Portfolio</a></li>
+                    <li><a class="hover:text-white transition-colors" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-8">Services</h4>
+                <ul class="space-y-4 text-white/80 text-sm">
+                    <li><a class="hover:text-white transition-colors" href="services.html">Business Advisory</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Branding</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Engineering &amp; Design</a>
+                    </li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Project Management</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-8">Get In Touch</h4>
+                <ul class="space-y-4 text-white/80 text-sm">
+                    <li class="flex items-center gap-3">admin@braige.com</li>
+                    <li class="flex items-center gap-3">braigedesigns@gmail.com</li>
+                    <li class="flex items-center gap-3">+234 906 387 7366</li>
+                    <li class="flex items-center gap-3">Abuja, Nigeria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/10 text-center">
+            <p class="text-white/60 text-sm">© 2026 Braige &amp; Company. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

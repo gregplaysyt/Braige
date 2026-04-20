@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About Us | BRAIGE &amp; COMPANY</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0d97be",
+            "secondary": "#0A3B43",
+            "surface": "#FFFFFF",
+            "background": "#FDFDFD",
+            "slate-custom": "#4A5568",
+            "on-surface-variant": "#64748b"
+          },
+          fontFamily: {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background text-[#1a1a1a] font-body selection:bg-primary/20 overflow-x-hidden">
+  <!-- Navigation -->
+  <header class="w-full bg-white py-4 border-b border-gray-50 sticky top-0 z-50 relative">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+      <a href="index.html" class="logo-link flex items-center gap-3" aria-label="Go to homepage">
+        <div class="w-14 h-14 flex items-center justify-center">
+          <img alt="Logo" class="w-12 h-12 object-contain" src="assets/logo.png" />
+        </div>
+        <span class="hidden sm:inline text-xl font-bold tracking-tight font-headline text-[#333]">BRAIGE &amp;
+          COMPANY</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-600">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+      <button id="mobile-menu-button"
+        class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/40" type="button"
+        aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </nav>
+    <div id="mobile-menu"
+      class="md:hidden hidden absolute left-0 right-0 top-full bg-white border-b border-gray-50 shadow-lg z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+        <div class="flex flex-col gap-2">
+          <a class="nav-link w-full justify-start" href="index.html">Home</a>
+          <a class="nav-link w-full justify-start" href="services.html">Services</a>
+          <a class="nav-link active w-full justify-start" href="about.html">About</a>
+          <a class="nav-link w-full justify-start" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-[500px] flex items-center pt-24 overflow-hidden bg-primary hero-pattern">
+      <div class="absolute inset-0 z-0">
+        <img alt="Professional office space" class="w-full h-full object-cover grayscale brightness-[0.2] opacity-40"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqQ8s-TsR7oTH0Z_BgFzVCFZQkkRZsbJ53xlVYGCe0oWj2kdKTNiXjWLZuSuf5QziRmwDraijDuAFtRFZ1LZF7_SL0PDceyRyfPz6X4IpGtdgG_3tW2rR5VTyhVW4yjwVzAzGDBZKr3Z_kHXuB5bMLWIOUto72kFrW87T-ckn69vhaTqJ_NuLJs0GdpkUWbNQrusihMcbF4JUIbFkPVHtT1yEKzvVt7CFpq3fLlmobPCs2d36FJxaPRFOTEZArI_Z7liVE212oVhw" />
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full text-white pb-16">
+        <div class="max-w-4xl">
+          <span
+            class="inline-block text-white/80 uppercase tracking-widest text-sm font-bold mb-4 border-b-2 border-white/40 pb-1">Established
+            Precision</span>
+          <h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">About Braige
+            &amp; Company</h1>
+          <p class="text-xl text-white/80 max-w-2xl leading-relaxed">
+            A multi-sectorial firm dedicated to the art of corporate growth. We architect the systems that allow brands
+            to thrive in complex global markets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-24 md:py-32 bg-white scroll-animate">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+          <div class="w-full lg:w-1/2 relative">
+            <div class="relative aspect-square overflow-hidden rounded-sm shadow-2xl">
+              <img alt="Consultant in meeting" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVMp4B86IQfCIDl-lclPrYsTfdQ98H04HFZIlcPz0vkbcd22iAAsfyWveC9dy-pv1DVSBhIesxNTZzR2-DAp8EN8gXwac2mTqpZ08CT9ZesnKSkwx2xGgpDmGAYQ5HizK4eDIXPO9RrpQ8jbCruGeiVutVZ9_pHcqyNWVCs9y-WYuCJ9EvD0NZt_6Jp_RSiO-I7oDbDy9XYw9g_GPIBzUZWWVazYWJ4GB6l1PlHd5SZyTxwTUw3uWaReqj70RK1cDBBeRtUnW1PsI" />
+            </div>
+            <div
+              class="absolute -bottom-8 -right-8 bg-white p-8 shadow-2xl border border-gray-100 hidden md:block min-w-[200px] text-center">
+              <span class="block text-4xl font-bold text-gray-900 font-headline mb-2">10+</span>
+              <span class="block text-xs uppercase tracking-widest font-bold text-gray-500">Years of
+                Strategic<br />Excellence</span>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 leading-tight">Helping
+              businesses build, brand, and scale.</h2>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-sm">
+              <p>For over a decade, Braige &amp; Company has stood at the intersection of architectural precision and
+                business development. We began with a single mission: to provide clarity in an increasingly complex
+                corporate landscape.</p>
+              <p>Our journey is defined by the successes of our clients. We don't just consult; we partner. By
+                meticulously analyzing market vectors and consumer psychology, we've helped hundreds of startups and
+                established enterprises redefine their market position and achieve sustainable scaling.</p>
+              <p>Today, our multi-sectorial expertise allows us to bridge gaps between industry silos, delivering
+                innovative approaches that exceed existing standards without ever compromising on the fundamental
+                quality of our output.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-24 md:py-32 bg-gray-50 scroll-animate">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Vision -->
+          <div
+            class="bg-white p-12 rounded-[2rem] shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300 border border-gray-50 group">
+            <div
+              class="w-16 h-16 bg-[#F8FAFC] shadow-[inset_6px_6px_12px_#d1d5db,inset_-6px_-6px_12px_#ffffff] rounded-2xl flex items-center justify-center mb-8 group-hover:-rotate-6 transition-all duration-300">
+              <span class="material-symbols-outlined text-primary text-3xl">visibility</span>
+            </div>
+            <h3 class="font-headline text-2xl font-bold text-gray-900 mb-4 tracking-tight">Vision</h3>
+            <p class="text-gray-500 text-lg leading-relaxed italic">
+              "To be known for excellence in rendering quality business development and branding solutions for start-ups
+              and existing enterprises"
+            </p>
+          </div>
+          <!-- Mission -->
+          <div
+            class="bg-primary p-12 rounded-[2rem] shadow-xl hover:-translate-y-1 transition-all duration-300 group text-white">
+            <div
+              class="w-16 h-16 bg-white/10 shadow-inner rounded-2xl flex items-center justify-center mb-8 backdrop-blur-sm group-hover:-rotate-6 transition-all duration-300 border border-white/20">
+              <span class="material-symbols-outlined text-white text-3xl">rocket_launch</span>
+            </div>
+            <h3 class="font-headline text-2xl font-bold text-white mb-4 tracking-tight">Mission</h3>
+            <p class="text-white/80 text-lg leading-relaxed">
+              "To provide our clients with top-notch innovative approach to services that exceeds the limits of existing
+              standards without compromising on quality."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-24 md:py-32 bg-white scroll-animate">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="text-center mb-16">
+          <p class="text-sm font-bold tracking-widest text-gray-400 border-b-2 border-primary inline-block pb-1">
+            FOUNDATION</p>
+          <h2 class="font-headline text-4xl font-extrabold text-gray-900 mt-4">Our Core Values</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Dedication -->
+          <div
+            class="bg-white p-8 rounded-[2rem] flex flex-col items-center text-center shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300 group border border-gray-50">
+            <span
+              class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 p-2">handshake</span>
+            <h4 class="font-headline text-xl font-bold text-gray-900 mb-3">Dedication</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Unwavering commitment to every project, ensuring goals are
+              met with meticulous focus.</p>
+          </div>
+          <!-- Excellence -->
+          <div
+            class="bg-white p-8 rounded-[2rem] flex flex-col items-center text-center shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300 group border border-gray-50">
+            <span
+              class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 p-2">auto_awesome</span>
+            <h4 class="font-headline text-xl font-bold text-gray-900 mb-3">Excellence</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Pursuing the highest possible standard in every deliverable
+              we architect for our clients.</p>
+          </div>
+          <!-- Resilience -->
+          <div
+            class="bg-white p-8 rounded-[2rem] flex flex-col items-center text-center shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300 group border border-gray-50">
+            <span
+              class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 p-2">shield_with_heart</span>
+            <h4 class="font-headline text-xl font-bold text-gray-900 mb-3">Resilience</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Adapting and thriving through market shifts and challenges
+              with strategic foresight.</p>
+          </div>
+          <!-- Quality -->
+          <div
+            class="bg-white p-8 rounded-[2rem] flex flex-col items-center text-center shadow-[12px_12px_24px_#d1d9e6,-12px_-12px_24px_#ffffff] hover:shadow-[16px_16px_32px_#c5d0e0,-16px_-16px_32px_#ffffff] hover:-translate-y-1 transition-all duration-300 group border border-gray-50">
+            <span
+              class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 p-2">verified</span>
+            <h4 class="font-headline text-xl font-bold text-gray-900 mb-3">Quality</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Precision-driven results that stand the test of time and
+              market scrutiny.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-48 bg-white text-center border-t border-gray-100">
+      <div class="max-w-4xl mx-auto px-6 space-y-8">
+        <h2 class="font-headline font-extrabold text-4xl text-gray-900">Let's Build Something Extraordinary</h2>
+        <p class="text-gray-600 text-lg">
+          Ready to scale your enterprise with architectural business precision? Our team is standing by to architect
+          your next phase of growth.
+        </p>
+        <div class="pt-4">
+          <a href="contact.html"
+            class="bg-primary text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-secondary transition-all flex w-fit items-center gap-3 mx-auto shadow-lg">
+            <span class="material-symbols-outlined">calendar_month</span>
+            Book a Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white pt-20 pb-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="space-y-6">
+        <div class="flex items-center gap-3">
+          <div class="w-16 h-16 bg-white flex items-center justify-center">
+            <img alt="Logo" class="w-14 h-14 object-contain" src="assets/logo.png" />
+          </div>
+        </div>
+        <h4 class="text-xl font-bold font-headline uppercase tracking-tighter">BRAIGE &amp; COMPANY</h4>
+        <p class="text-white/70 text-sm leading-relaxed max-w-xs">
+          Multi-sectorial firm providing support services in Business Development, Branding and Project Management. We
+          make clients see the "extra-awesomeness" of their brand.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-8">Quick links</h4>
+        <ul class="space-y-4 text-white/80 text-sm">
+          <li><a class="hover:text-white transition-colors" href="about.html">About Us</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Services</a></li>
+          <li><a class="hover:text-white transition-colors" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="hover:text-white transition-colors" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-8">Services</h4>
+        <ul class="space-y-4 text-white/80 text-sm">
+          <li><a class="hover:text-white transition-colors" href="services.html">Business Advisory</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Branding</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Engineering &amp; Design</a></li>
+          <li><a class="hover:text-white transition-colors" href="services.html">Project Management</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-8">Get In Touch</h4>
+        <ul class="space-y-4 text-white/80 text-sm">
+          <li class="flex items-center gap-3">admin@braige.com</li>
+          <li class="flex items-center gap-3">braigedesigns@gmail.com</li>
+          <li class="flex items-center gap-3">+234 906 387 7366</li>
+          <li class="flex items-center gap-3">Abuja, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/10 text-center">
+      <p class="text-white/60 text-sm">© 2026 Braige &amp; Company. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

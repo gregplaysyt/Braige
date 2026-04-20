@@ -53,12 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Counter animation on scroll
 function animateCounters(element) {
     const counters = element.querySelectorAll('.counter');
-    
+
     counters.forEach(counter => {
         const target = parseInt(counter.getAttribute('data-target'));
         const increment = target / 60; // Animate over ~60 frames
         let current = 0;
-        
+
         const updateCounter = () => {
             current += increment;
             if (current < target) {
@@ -71,7 +71,7 @@ function animateCounters(element) {
                 counter.textContent = target + suffix;
             }
         };
-        
+
         updateCounter();
     });
 }
@@ -79,7 +79,7 @@ function animateCounters(element) {
 // Intersection Observer for scroll-triggered animation
 document.addEventListener('DOMContentLoaded', () => {
     const statsSection = document.querySelector('.grid.grid-cols-3');
-    
+
     if (statsSection) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, { threshold: 0.5 });
-        
+
         observer.observe(statsSection);
     }
 });
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Scroll animation observer for all elements with scroll-animate class
 document.addEventListener('DOMContentLoaded', () => {
     const scrollAnimateElements = document.querySelectorAll('.scroll-animate');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, { threshold: 0.15 });
-    
+
     scrollAnimateElements.forEach(element => {
         observer.observe(element);
     });
