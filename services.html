@@ -96,7 +96,7 @@
                         we've got you covered.
                     </p>
                     <a href="contact.html"
-                        class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all inline-block">
+                        class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all inline-block">
                         Schedule a Consultation
                     </a>
                 </div>
@@ -105,22 +105,22 @@
         <!-- Tab Navigation -->
         <section class="max-w-7xl mx-auto px-8 py-12">
             <div class="flex flex-wrap gap-4 justify-center border-b border-transparent pb-4">
-                <button class="px-8 py-3 rounded-xl font-bold transition-all bg-primary text-white shadow-lg"
+                <button class="px-8 py-3 rounded-full font-bold transition-all bg-primary text-white shadow-lg"
                     id="tab-business" onclick="switchTab('business')">
                     Business Advisory
                 </button>
                 <button
-                    class="px-8 py-3 rounded-xl font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200"
+                    class="px-8 py-3 rounded-full font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200"
                     id="tab-branding" onclick="switchTab('branding')">
                     Branding Services
                 </button>
                 <button
-                    class="px-8 py-3 rounded-xl font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200"
+                    class="px-8 py-3 rounded-full font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200"
                     id="tab-engineering" onclick="switchTab('engineering')">
                     Engineering &amp; Design
                 </button>
                 <button
-                    class="px-8 py-3 rounded-xl font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200"
+                    class="px-8 py-3 rounded-full font-bold transition-all text-[#191c1d] bg-slate-100 hover:bg-slate-200"
                     id="tab-project" onclick="switchTab('project')">
                     Project Management
                 </button>
@@ -139,28 +139,88 @@
                                 efficiently navigate through different economical and commercial terrains and to
                                 thoroughly analyze trends.
                             </p>
-                            <ul class="space-y-4">
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Business Plans &amp; Feasibility Studies
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Investment &amp; Risk Analysis
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Concept Notes &amp; Proposals
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Strategy &amp; Implementation Plans
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Human Capacity Development
-                                </li>
-                            </ul>
+                            <div class="space-y-5 w-full">
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">analytics</span>
+                                            Business Plans &amp; Feasibility Studies
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Comprehensive market research and financial projections to ensure your business idea is viable, highly scalable, and structurally ready for investment.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">trending_up</span>
+                                            Investment &amp; Risk Analysis
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                In-depth evaluation of potential investments and the development of rigorous mitigation strategies against commercial or operational risks.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">description</span>
+                                            Concept Notes &amp; Proposals
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Professionally drafted documents that clearly communicate your project's core objectives, methods, and funding requirements to stakeholders.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">account_tree</span>
+                                            Strategy &amp; Implementation Plans
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Actionable roadmaps that bridge the gap between high-level business goals and ground-level operational execution.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">diversity_3</span>
+                                            Human Capacity Development
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Customized training modules and structural alignments designed to empower your workforce and maximize organizational efficiency.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="text-xs text-[#70797b] italic">
                                 "From concept notes for Agri-business startups to expansion plans for energy firms,
                                 we've done it all."
@@ -204,24 +264,72 @@
                                 We are equipped with the best tools for rendering top-notch visuals for business
                                 solutions. From inception phase to the inking phase, we deliver accurately.
                             </p>
-                            <ul class="space-y-4">
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Visual Identity
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Print Collateral
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Digital Presence
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Brand Strategy
-                                </li>
-                            </ul>
+                            <div class="space-y-5 w-full">
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">palette</span>
+                                            Visual Identity
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Crafting unique, memorable logos, typography, and color schemes that firmly establish your brand's core identity.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">print</span>
+                                            Print Collateral
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Designing high-quality physical marketing materials like business cards, brochures, and banners that leave a lasting impression.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">devices</span>
+                                            Digital Presence
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Developing cohesive visual assets for social media, email campaigns, and online platforms to heavily engage your digital audience.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">insights</span>
+                                            Brand Strategy
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Positioning your brand optimally in the competitive landscape with a compelling narrative and a long-term evolutionary roadmap.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="text-xs text-[#70797b] italic">
                                 "We've created brand identities for businesses across Agriculture, ICT, Hospitality,
                                 Real Estate, and Financial Services."
@@ -264,28 +372,88 @@
                                 Strategic partnerships with experienced professional engineers, architects and project
                                 planners to render world class real estate services.
                             </p>
-                            <ul class="space-y-4">
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    2D &amp; 3D Architectural Drawings
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Structural Design &amp; Details
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Project Construction Supervision
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Interior &amp; Exterior Renderings
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Budget Matching
-                                </li>
-                            </ul>
+                            <div class="space-y-5 w-full">
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">architecture</span>
+                                            2D &amp; 3D Architectural Drawings
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Detailed, scaled blueprints and immersive 3D models to perfectly visualize spatial layouts before construction begins.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">foundation</span>
+                                            Structural Design &amp; Details
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Precise calculations and reinforcement planning to ensure the absolute safety and longevity of your building.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">engineering</span>
+                                            Project Construction Supervision
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                On-site expert oversight to guarantee that construction strictly adheres to approved designs, budgets, and quality standards.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">imagesearch_roller</span>
+                                            Interior &amp; Exterior Renderings
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Photorealistic digital images showcasing the final aesthetic of spaces, materials, and complex lighting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">account_balance_wallet</span>
+                                            Budget Matching
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Aligning massive design ambitions with practical financial realities to prevent cost overruns without compromising integrity.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="text-xs text-[#70797b] italic">
                                 "From 4-Bedroom Twin Duplexes in Lagos to conceptual resort designs, we bring visions to
                                 life."
@@ -321,28 +489,88 @@
                                 End-to-end project oversight ensuring your initiatives are delivered on time, within
                                 budget, and to the highest quality standards.
                             </p>
-                            <ul class="space-y-4">
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Project Planning &amp; Scheduling
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Resource Allocation
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Risk Management
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Quality Assurance
-                                </li>
-                                <li class="flex items-center gap-3 font-bold text-[#191c1d]">
-                                    <span class="material-symbols-outlined text-[#191c1d]">check</span>
-                                    Stakeholder Communication
-                                </li>
-                            </ul>
+                            <div class="space-y-5 w-full">
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">event_available</span>
+                                            Project Planning &amp; Scheduling
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Creating rigorous timelines and milestone markers to keep complex initiatives firmly on track from day one.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">group_work</span>
+                                            Resource Allocation
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Strategically distributing personnel, equipment, and capital across stages to maximize productivity and eliminate bottlenecks.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">security</span>
+                                            Risk Management
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Proactively identifying potential delays or failures and establishing contingency plans to safeguard project delivery.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">verified</span>
+                                            Quality Assurance
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Implementing strict review protocols at every project phase to guarantee the final output meets all required standards.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f3f4fb] rounded-xl shadow-[8px_8px_16px_#d9dbe9,-8px_-8px_16px_#ffffff] transition-all duration-300 overflow-hidden accordion-item cursor-pointer border border-white/50">
+                                    <div class="flex justify-between items-center p-4 font-bold text-[#191c1d] accordion-header">
+                                        <span class="flex items-center gap-3">
+                                            <span class="material-symbols-outlined text-primary text-xl">hub</span>
+                                            Cross-Discipline Coordination
+                                        </span>
+                                        <span class="transition-transform duration-300 material-symbols-outlined text-gray-400 chevron">expand_more</span>
+                                    </div>
+                                    <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 accordion-content">
+                                        <div class="overflow-hidden">
+                                            <div class="px-5 pb-5 pt-1 text-[#4a6367] text-sm leading-relaxed border-t border-slate-200/50 mx-4 mt-2">
+                                                Synchronizing efforts between diverse internal teams and external contractors to ensure a cohesive and highly efficient project execution.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="service-image-card md:col-span-2">
@@ -374,7 +602,7 @@
                     Let's discuss how we can help take your business to the next level.
                 </p>
                 <a href="contact.html"
-                    class="bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center gap-3 mx-auto shadow-xl hover:-translate-y-1 transition-all w-fit">
+                    class="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg flex items-center gap-3 mx-auto shadow-xl hover:-translate-y-1 transition-all w-fit">
                     <span class="material-symbols-outlined">calendar_month</span>
                     Book a Consultation
                 </a>
