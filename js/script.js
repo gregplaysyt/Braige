@@ -178,3 +178,84 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape') setOpen(false);
     });
 });
+
+// Portfolio Slideshow logic
+document.addEventListener('DOMContentLoaded', () => {
+    const sliders = document.querySelectorAll('.portfolio-slider');
+    
+    sliders.forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        const indicators = slider.querySelectorAll('.indicator-btn');
+        const prevBtn = slider.querySelector('.prev-btn');
+        const nextBtn = slider.querySelector('.next-btn');
+        
+        if (!slides.length) return;
+        
+        let currentIndex = parseInt(slider.getAttribute('data-current-slide') || '0');
+        let autoPlayInterval;
+        const isAutoPlay = slider.getAttribute('data-auto-play') === 'true';
+        
+        // Extract the active color class dynamically (bg-primary or bg-secondary)
+        let activeIndicatorClass = 'bg-primary';
+        if (indicators.length > 0) {
+            const match = indicators[0].className.match(/bg-(primary|secondary)/);
+            if (match) activeIndicatorClass = match[0];
+        }
+        
+        function updateSlide(index) {
+            if (index < 0) index = slides.length - 1;
+            if (index >= slides.length) index = 0;
+            
+            // Hide current slide
+            slides[currentIndex].classList.remove('opacity-100');
+            slides[currentIndex].classList.add('opacity-0', 'pointer-events-none');
+            
+            // Update current indicator
+            if (indicators[currentIndex]) {
+                indicators[currentIndex].classList.remove('w-6', activeIndicatorClass);
+                indicators[currentIndex].classList.add('w-2', 'bg-white');
+            }
+            
+            // Set new current index
+            currentIndex = index;
+            slider.setAttribute('data-current-slide', currentIndex);
+            
+            // Show new slide
+            slides[currentIndex].classList.remove('opacity-0', 'pointer-events-none');
+            slides[currentIndex].classList.add('opacity-100');
+            
+            // Update new indicator
+            if (indicators[currentIndex]) {
+                indicators[currentIndex].classList.remove('w-2', 'bg-white');
+                indicators[currentIndex].classList.add('w-6', activeIndicatorClass);
+            }
+        }
+        
+        function nextSlide() { updateSlide(currentIndex + 1); }
+        function prevSlide() { updateSlide(currentIndex - 1); }
+        
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        
+        indicators.forEach((indicator, idx) => {
+            indicator.addEventListener('click', () => updateSlide(idx));
+        });
+        
+        function startAutoPlay() {
+            if (isAutoPlay) {
+                autoPlayInterval = setInterval(nextSlide, 5000);
+            }
+        }
+        
+        function stopAutoPlay() {
+            if (autoPlayInterval) clearInterval(autoPlayInterval);
+        }
+        
+        // Pause on hover
+        slider.addEventListener('mouseenter', stopAutoPlay);
+        slider.addEventListener('mouseleave', startAutoPlay);
+        
+        // Initialize
+        startAutoPlay();
+    });
+});

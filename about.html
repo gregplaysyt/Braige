@@ -26,8 +26,8 @@
             "on-surface-variant": "#64748b"
           },
           fontFamily: {
-            "headline": ["Manrope", "sans-serif"],
-            "body": ["Inter", "sans-serif"],
+            "headline": ["'Century Gothic Paneuropean'", "'Century Gothic'", "Manrope", "sans-serif"],
+            "body": ["'Century Gothic Paneuropean'", "'Century Gothic'", "Inter", "sans-serif"],
           },
           borderRadius: {
             "DEFAULT": "0.25rem",
@@ -108,8 +108,8 @@
         <div class="flex flex-col lg:flex-row gap-16 items-center">
           <div class="w-full lg:w-1/2 relative">
             <div class="relative aspect-square overflow-hidden rounded-sm shadow-2xl">
-              <img alt="Consultant in meeting" class="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVMp4B86IQfCIDl-lclPrYsTfdQ98H04HFZIlcPz0vkbcd22iAAsfyWveC9dy-pv1DVSBhIesxNTZzR2-DAp8EN8gXwac2mTqpZ08CT9ZesnKSkwx2xGgpDmGAYQ5HizK4eDIXPO9RrpQ8jbCruGeiVutVZ9_pHcqyNWVCs9y-WYuCJ9EvD0NZt_6Jp_RSiO-I7oDbDy9XYw9g_GPIBzUZWWVazYWJ4GB6l1PlHd5SZyTxwTUw3uWaReqj70RK1cDBBeRtUnW1PsI" />
+              <img alt="Diverse team collaborating on strategy, symbolizing growth and integrity" class="w-full h-full object-cover"
+                src="assets/images/our-story-growth.png" />
             </div>
             <div
               class="absolute -bottom-8 -right-8 bg-white p-8 shadow-2xl border border-gray-100 hidden md:block min-w-[200px] text-center">
@@ -220,6 +220,298 @@
       </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section class="py-24 md:py-32 bg-gray-50 overflow-hidden" id="portfolio">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-24 scroll-animate">
+                <p class="text-sm font-bold tracking-widest text-gray-400 border-b-2 border-primary inline-block pb-1">
+                    OUR TRACK RECORD</p>
+                <h2 class="font-headline text-5xl font-extrabold text-gray-900 mt-6 leading-tight">Portfolio &amp; Track
+                    Record</h2>
+                <p class="text-gray-500 mt-6 text-lg max-w-2xl mx-auto">A comprehensive breakdown of the projects and sectors
+                    covered in our track record of excellence.</p>
+            </div>
+
+            <div class="space-y-32">
+                <!-- Category 1: Business Advisory -->
+                <div class="flex flex-col lg:flex-row gap-16 items-center scroll-animate stagger-1">
+                    <div class="w-full lg:w-1/2 relative group">
+                        <div
+                            class="absolute -inset-4 bg-primary/5 rounded-[2.5rem] transform -rotate-3 transition-transform duration-500 group-hover:rotate-0">
+                        </div>
+                        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl bg-white aspect-[4/3] border border-gray-100 portfolio-slider group/slider" data-current-slide="0" data-auto-play="true">
+                            <!-- Slides Container -->
+                            <div class="absolute inset-0 z-0 slides-wrapper bg-gray-100">
+                                <!-- Slide 1 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 slide">
+                                    <img src="assets/images/advisory-1.png" alt="myRENT.ng Business Model" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0d97be?text=Please+Upload+advisory-1.png';"/>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 slide pointer-events-none">
+                                    <img src="assets/images/advisory-2.png" alt="Combine Harvester Investment Case" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0d97be?text=Please+Upload+advisory-2.png';"/>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 slide pointer-events-none">
+                                    <img src="assets/images/advisory-3.png" alt="Empress Food Pitch Deck" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0d97be?text=Please+Upload+advisory-3.png';"/>
+                                </div>
+                            </div>
+                            
+                            <!-- Controls (Next/Prev) -->
+                            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/60 backdrop-blur-md flex items-center justify-center text-gray-800 hover:bg-white/90 hover:scale-110 transition-all z-10 prev-btn opacity-0 group-hover/slider:opacity-100 shadow-md" aria-label="Previous slide">
+                                <span class="material-symbols-outlined">chevron_left</span>
+                            </button>
+                            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/60 backdrop-blur-md flex items-center justify-center text-gray-800 hover:bg-white/90 hover:scale-110 transition-all z-10 next-btn opacity-0 group-hover/slider:opacity-100 shadow-md" aria-label="Next slide">
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </button>
+                            
+                            <!-- Indicators -->
+                            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10 indicators-container bg-white/40 backdrop-blur-sm px-3 py-2 rounded-full shadow-sm">
+                                <button class="w-6 h-2 rounded-full bg-primary transition-all indicator-btn" data-index="0" aria-label="Go to slide 1"></button>
+                                <button class="w-2 h-2 rounded-full bg-white hover:bg-primary/50 transition-all indicator-btn" data-index="1" aria-label="Go to slide 2"></button>
+                                <button class="w-2 h-2 rounded-full bg-white hover:bg-primary/50 transition-all indicator-btn" data-index="2" aria-label="Go to slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 space-y-8">
+                        <div class="inline-flex items-center gap-3 bg-white px-5 py-2.5 rounded-full shadow-sm border border-gray-100 text-primary font-bold text-sm tracking-wide uppercase">
+                            <span class="material-symbols-outlined text-xl">analytics</span>
+                            Quantitative &amp; Qualitative Solutions
+                        </div>
+                        <h3 class="font-headline text-4xl font-extrabold text-gray-900 leading-tight">Business Advisory Services</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Navigating commercial terrains through meticulous research and strategic modeling to deliver robust business plans and financial strategies.
+                        </p>
+                        <ul class="space-y-5 text-gray-700">
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">business_center</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Logistics Business Plan</strong>
+                                    <span class="text-sm text-gray-500">Everything Errands</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">trending_up</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Oil &amp; Gas Expansion Strategy</strong>
+                                    <span class="text-sm text-gray-500">Ignis Energy - ROI potential &amp; operational capacity</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">account_tree</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Abuja Concierge Firm</strong>
+                                    <span class="text-sm text-gray-500">5-Year Implementation Map &amp; Matrix Scoring</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">account_balance</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Hospitality &amp; Island Resort</strong>
+                                    <span class="text-sm text-gray-500">Detailed Financial Modeling</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">real_estate_agent</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Investment Case for Real-Tech Firm</strong>
+                                    <span class="text-sm text-gray-500">Investment Scenarios &amp; Risk Assessment</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 2: Branding & Visual Identity (Reversed) -->
+                <div class="flex flex-col lg:flex-row-reverse gap-16 items-center scroll-animate stagger-2">
+                    <div class="w-full lg:w-1/2 relative group">
+                        <div
+                            class="absolute -inset-4 bg-secondary/5 rounded-[2.5rem] transform rotate-3 transition-transform duration-500 group-hover:rotate-0">
+                        </div>
+                        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl bg-white aspect-[4/3] border border-gray-100 portfolio-slider group/slider" data-current-slide="0" data-auto-play="true">
+                            <!-- Slides Container -->
+                            <div class="absolute inset-0 z-0 slides-wrapper bg-gray-100">
+                                <!-- Slide 1 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 slide">
+                                    <img src="assets/images/branding-1.png" alt="Branding Project 1" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0A3B43?text=Please+Upload+branding-1.png';"/>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 slide pointer-events-none">
+                                    <img src="assets/images/branding-2.png" alt="Branding Project 2" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0A3B43?text=Please+Upload+branding-2.png';"/>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 slide pointer-events-none">
+                                    <img src="assets/images/branding-3.png" alt="Branding Project 3" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0A3B43?text=Please+Upload+branding-3.png';"/>
+                                </div>
+                            </div>
+                            
+                            <!-- Controls (Next/Prev) -->
+                            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/60 backdrop-blur-md flex items-center justify-center text-gray-800 hover:bg-white/90 hover:scale-110 transition-all z-10 prev-btn opacity-0 group-hover/slider:opacity-100 shadow-md" aria-label="Previous slide">
+                                <span class="material-symbols-outlined">chevron_left</span>
+                            </button>
+                            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/60 backdrop-blur-md flex items-center justify-center text-gray-800 hover:bg-white/90 hover:scale-110 transition-all z-10 next-btn opacity-0 group-hover/slider:opacity-100 shadow-md" aria-label="Next slide">
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </button>
+                            
+                            <!-- Indicators -->
+                            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10 indicators-container bg-white/40 backdrop-blur-sm px-3 py-2 rounded-full shadow-sm">
+                                <button class="w-6 h-2 rounded-full bg-secondary transition-all indicator-btn" data-index="0" aria-label="Go to slide 1"></button>
+                                <button class="w-2 h-2 rounded-full bg-white hover:bg-secondary/50 transition-all indicator-btn" data-index="1" aria-label="Go to slide 2"></button>
+                                <button class="w-2 h-2 rounded-full bg-white hover:bg-secondary/50 transition-all indicator-btn" data-index="2" aria-label="Go to slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 space-y-8">
+                        <div class="inline-flex items-center gap-3 bg-white px-5 py-2.5 rounded-full shadow-sm border border-gray-100 text-secondary font-bold text-sm tracking-wide uppercase">
+                            <span class="material-symbols-outlined text-xl">palette</span>
+                            Conceptual Blueprints to Inked Visuals
+                        </div>
+                        <h3 class="font-headline text-4xl font-extrabold text-gray-900 leading-tight">Branding &amp; Visual Identity</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Transitioning concepts into final inked visuals, delivering complete brand identities, logo designs, and digital platforms.
+                        </p>
+                        <ul class="space-y-5 text-gray-700">
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-secondary text-xl">design_services</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Full Branding Packages</strong>
+                                    <span class="text-sm text-gray-500">Dexa Integrated Services &amp; LoftyAcre Limited</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-secondary text-xl">draw</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Logo Designs</strong>
+                                    <span class="text-sm text-gray-500">Trizone Consulting (Ghana) &amp; Afriwallstreet</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-secondary text-xl">web</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Website Development</strong>
+                                    <span class="text-sm text-gray-500">Mockups for NatifPot Culinary &amp; Flips Online Book Store</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-secondary text-xl">contact_page</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Design of Visual Collateral</strong>
+                                    <span class="text-sm text-gray-500">Corporate Profiles, Brochures, Business Cards, Letterheads</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 3: Engineering & Architectural Design -->
+                <div class="flex flex-col lg:flex-row gap-16 items-center scroll-animate stagger-3">
+                    <div class="w-full lg:w-1/2 relative group">
+                        <div
+                            class="absolute -inset-4 bg-primary/5 rounded-[2.5rem] transform -rotate-3 transition-transform duration-500 group-hover:rotate-0">
+                        </div>
+                        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl bg-white aspect-[4/3] border border-gray-100 portfolio-slider group/slider" data-current-slide="0" data-auto-play="true">
+                            <!-- Slides Container -->
+                            <div class="absolute inset-0 z-0 slides-wrapper bg-gray-100">
+                                <!-- Slide 1 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 slide">
+                                    <img src="assets/images/engineering-1.png" alt="Engineering Project 1" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0d97be?text=Please+Upload+engineering-1.png';"/>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 slide pointer-events-none">
+                                    <img src="assets/images/engineering-2.png" alt="Engineering Project 2" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0d97be?text=Please+Upload+engineering-2.png';"/>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 slide pointer-events-none">
+                                    <img src="assets/images/engineering-3.png" alt="Engineering Project 3" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f8fafc/0d97be?text=Please+Upload+engineering-3.png';"/>
+                                </div>
+                            </div>
+                            
+                            <!-- Controls (Next/Prev) -->
+                            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/60 backdrop-blur-md flex items-center justify-center text-gray-800 hover:bg-white/90 hover:scale-110 transition-all z-10 prev-btn opacity-0 group-hover/slider:opacity-100 shadow-md" aria-label="Previous slide">
+                                <span class="material-symbols-outlined">chevron_left</span>
+                            </button>
+                            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/60 backdrop-blur-md flex items-center justify-center text-gray-800 hover:bg-white/90 hover:scale-110 transition-all z-10 next-btn opacity-0 group-hover/slider:opacity-100 shadow-md" aria-label="Next slide">
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </button>
+                            
+                            <!-- Indicators -->
+                            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10 indicators-container bg-white/40 backdrop-blur-sm px-3 py-2 rounded-full shadow-sm">
+                                <button class="w-6 h-2 rounded-full bg-primary transition-all indicator-btn" data-index="0" aria-label="Go to slide 1"></button>
+                                <button class="w-2 h-2 rounded-full bg-white hover:bg-primary/50 transition-all indicator-btn" data-index="1" aria-label="Go to slide 2"></button>
+                                <button class="w-2 h-2 rounded-full bg-white hover:bg-primary/50 transition-all indicator-btn" data-index="2" aria-label="Go to slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 space-y-8">
+                        <div class="inline-flex items-center gap-3 bg-white px-5 py-2.5 rounded-full shadow-sm border border-gray-100 text-primary font-bold text-sm tracking-wide uppercase">
+                            <span class="material-symbols-outlined text-xl">foundation</span>
+                            2D &amp; 3D World-Class Services
+                        </div>
+                        <h3 class="font-headline text-4xl font-extrabold text-gray-900 leading-tight">Engineering &amp; Architectural Design</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Technical precision highlighted through meticulously crafted 2D drawings and high-fidelity 3D structural renderings.
+                        </p>
+                        <ul class="space-y-5 text-gray-700">
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">domain</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Residential Projects</strong>
+                                    <span class="text-sm text-gray-500">Conceptual Renderings for 4-Bedroom Twin Duplex, Lagos</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">golf_course</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Commercial &amp; Leisure</strong>
+                                    <span class="text-sm text-gray-500">Mini Golf Park &amp; Learning Resort Conceptual Rendering</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">kitchen</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Interior Design</strong>
+                                    <span class="text-sm text-gray-500">Interior Kitchen Concept 3D Visualization</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-50 hover:shadow-[8px_8px_16px_#e2e8f0,-8px_-8px_16px_#ffffff] hover:-translate-y-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                                    <span class="material-symbols-outlined text-primary text-xl">engineering</span>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block text-lg">Engineering Consulting</strong>
+                                    <span class="text-sm text-gray-500">Structural Design Details &amp; Construction Supervision</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-48 bg-white text-center border-t border-gray-100">
       <div class="max-w-4xl mx-auto px-6 space-y-8">
@@ -259,7 +551,7 @@
         <ul class="space-y-4 text-white/80 text-sm">
           <li><a class="hover:text-white transition-colors" href="about.html">About Us</a></li>
           <li><a class="hover:text-white transition-colors" href="services.html">Services</a></li>
-          <li><a class="hover:text-white transition-colors" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="hover:text-white transition-colors" href="about.html#portfolio">Portfolio</a></li>
           <li><a class="hover:text-white transition-colors" href="contact.html">Contact</a></li>
         </ul>
       </div>
