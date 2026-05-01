@@ -176,10 +176,19 @@ nav a.logo-link:active {
 
 /* Float Animation for abstract background elements */
 @keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(2deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
 }
+
 .animate-float {
     animation: float 6s ease-in-out infinite;
 }
@@ -191,6 +200,7 @@ nav a.logo-link:active {
         transform: translateY(40px) scale(0.98);
         filter: blur(8px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -211,17 +221,32 @@ nav a.logo-link:active {
 }
 
 /* Staggered load delays */
-.stagger-1 { animation-delay: 80ms; }
-.stagger-2 { animation-delay: 160ms; }
-.stagger-3 { animation-delay: 240ms; }
-.stagger-4 { animation-delay: 320ms; }
-.stagger-5 { animation-delay: 400ms; }
+.stagger-1 {
+    animation-delay: 80ms;
+}
+
+.stagger-2 {
+    animation-delay: 160ms;
+}
+
+.stagger-3 {
+    animation-delay: 240ms;
+}
+
+.stagger-4 {
+    animation-delay: 320ms;
+}
+
+.stagger-5 {
+    animation-delay: 400ms;
+}
 
 /* Premium Global Hover Effects */
 .hover-lift {
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     will-change: transform;
 }
+
 .hover-lift:hover {
     transform: translateY(-10px);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
@@ -230,6 +255,7 @@ nav a.logo-link:active {
 .hover-glow {
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .hover-glow:hover {
     box-shadow: 0 0 35px rgba(13, 151, 190, 0.4);
     transform: translateY(-4px) scale(1.02);
@@ -239,10 +265,12 @@ nav a.logo-link:active {
     overflow: hidden;
     border-radius: inherit;
 }
+
 .image-zoom-container img {
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     will-change: transform;
 }
+
 .image-zoom-container:hover img {
     transform: scale(1.08);
 }
