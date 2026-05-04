@@ -1,0 +1,106 @@
+<!-- maintenance.html -->
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Under Maintenance | BRAIGE &amp; COMPANY</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0d97be",
+            "secondary": "#0A3B43",
+            "surface": "#FFFFFF",
+            "background": "#FDFDFD",
+            "slate-custom": "#4A5568",
+            "on-surface-variant": "#64748b"
+          },
+          fontFamily: {
+            "headline": ["'Century Gothic'", "'Century Gothic Paneuropean'", "Manrope", "sans-serif"],
+            "body": ["'Century Gothic'", "'Century Gothic Paneuropean'", "Inter", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-background text-[#1a1a1a] font-body selection:bg-primary/20 min-h-screen flex flex-col">
+  <!-- Navigation (Simplified for Maintenance) -->
+  <header class="w-full bg-white py-4 border-b border-gray-50 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-center items-center">
+      <div class="logo-link flex items-center gap-3">
+        <div class="w-14 h-14 flex items-center justify-center">
+          <img alt="Logo" class="w-12 h-12 object-contain" src="assets/logo.png" />
+        </div>
+        <span class="text-xl font-bold tracking-tight font-headline text-[#333]">BRAIGE &amp; COMPANY</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="flex-grow flex items-center justify-center relative overflow-hidden hero-pattern">
+    <!-- Abstract Background Pattern (Visualized via Dots) -->
+    <div class="absolute -z-10 left-10 top-10 w-[600px] h-[600px] opacity-10">
+      <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern class="dot-fill" height="10" id="dots" patternunits="userSpaceOnUse" width="10" x="0" y="0">
+            <circle cx="2" cy="2" r="1.5"></circle>
+          </pattern>
+        </defs>
+        <rect fill="url(#dots)" height="200" width="200"></rect>
+      </svg>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-6 text-center space-y-8 relative z-10 py-16">
+        <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 animate-float">
+            <span class="material-symbols-outlined text-5xl">engineering</span>
+        </div>
+        
+        <h1 class="font-headline font-extrabold text-5xl md:text-6xl text-gray-900 tracking-tight">
+            We're improving our <span class="text-primary">experience</span>.
+        </h1>
+        
+        <p class="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            The Braige &amp; Company website is currently undergoing scheduled maintenance to bring you a better browsing experience. We'll be back online shortly.
+        </p>
+
+        <div class="pt-8 flex flex-col items-center justify-center gap-4">
+            <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Need to reach us urgently?</p>
+            <a href="mailto:admin@braige.com" class="inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors text-lg">
+                <span class="material-symbols-outlined">mail</span>
+                admin@braige.com
+            </a>
+        </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 border-t border-gray-100 text-center">
+    <p class="text-gray-400 text-sm">
+      &copy; 2026 Braige &amp; Company. All rights reserved.
+    </p>
+  </footer>
+</body>
+
+</html>
