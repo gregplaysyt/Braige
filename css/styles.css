@@ -1,4 +1,35 @@
 /* styles.css */
+
+/* ===== Self-hosted Century Gothic ===== */
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../assets/fonts/CenturyGothic-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../assets/fonts/CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../assets/fonts/CenturyGothic-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../assets/fonts/CenturyGothic-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
