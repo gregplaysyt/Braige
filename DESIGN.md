@@ -149,7 +149,7 @@ button:active, a.bg-primary:active, a[class*="rounded-full"]:active {
 *   **Active Navigation Pills:** The current active page in the nav bar utilizes a pill-shaped background (`rounded-full bg-primary text-white`) to clearly orient the user.
 
 ```html
-<nav class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+<nav class="max-w-5xl mx-auto px-4 sm:px-6 flex justify-between items-center">
     <!-- Logo -->
     <a href="index.html" class="logo-link flex items-center gap-3">
         <div class="w-14 h-14 flex items-center justify-center">
@@ -205,7 +205,7 @@ Used on `about.html`, `services.html`, and `contact.html`.
     <div class="absolute inset-0 bg-black/30"></div>
     
     <!-- Content -->
-    <div class="relative max-w-7xl mx-auto px-8 w-full z-10 text-white">
+    <div class="relative max-w-5xl mx-auto px-8 w-full z-10 text-white">
         <h1 class="text-5xl md:text-6xl font-headline font-bold mb-4">Our Services</h1>
         <p class="text-lg opacity-90 max-w-lg mb-8">Comprehensive business solutions tailored to your unique needs.</p>
     </div>
